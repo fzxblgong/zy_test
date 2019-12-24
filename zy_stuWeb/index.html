@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		<script src="js/jQuery-3.4.1.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function(){
+				var $ali = $(".li1");
+				// $ali.mousemove
+			    for(var i=0;i<$ali.length;i++){
+					$ali.eq(i).click(function(){	
+						// $(".li1 ul").toggle();
+						$(this).find("ul").toggle();
+							/* if($(this).find("ul").is(':hidden')){
+								$(this).find("ul").show()
+							}else{
+								$(this).find("ul").hide()
+							} */
+						/* 	alert()
+							$ali.eq(i).show();
+						}) */
+					});
+				}
+					// var $li = $(".li1 ul li");
+				
+					// event.stopPropagation($li2);
+				})
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/Clear.css" />
+		<style type="text/css">
+			div {
+				background-color: blue;
+			}
+
+			.left,
+			.body {
+				float: left;
+			}
+
+			.bottom {
+				clear: both;
+			}
+
+			#div1x .left,
+			.body {
+				float: left;
+				height: 500px;
+			}
+
+			.left {
+				width: 15%;
+				background-color: #A3A3A3;
+			}
+
+			.body {
+				width: 85%;
+				background-color: #fff;
+			}
+
+			/* #div1{
+				width: 200px;
+				height: 200px;
+				background-color: #bfa;
+			} */
+			/* .nav1>li>ul {
+				display: none;
+			} */
+
+			.nav1>li {
+				background-color: #545454;
+				margin-bottom: 5px;
+					-webkit-user-select:none;
+				
+				     -moz-user-select:none;
+				
+				     -ms-user-select:none;
+				
+				     user-select:none;
+			}
+			.nav1 li ul li a{
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1x">
+			<div class="top">top</div>
+			<div class="left">
+				<ul class="nav1">
+					<li class="li1">aaaaa
+						<ul>
+							<li><a href="#">&emsp;a1</a></li>
+							<li><a href="#">&emsp;a2</a></li>
+							<li><a href="#">&emsp;a3</a></li>
+							<li><a href="#">&emsp;a4</a></li>
+						</ul>
+					</li>
+					<li class="li1">bbbbb
+						<ul>
+							<li><a href="#">&emsp;b1</a></li>
+							<li><a href="#">&emsp;b2</a></li>
+							<li><a href="#">&emsp;b3</a></li>
+							<li><a href="#">&emsp;b4</a></li>
+						</ul>
+					</li>
+					<li class="li1">cccc
+						<ul>
+							<li><a href="#">&emsp;c1</a></li>
+							<li><a href="#">&emsp;c2</a></li>
+							<li><a href="#">&emsp;c3</a></li>
+							<li><a href="#">&emsp;c4</a></li>
+						</ul>
+					</li>
+					<li class="li1">dddddd
+						<ul>
+							<li><a href="#">&emsp;d1</a></li>
+							<li><a href="#">&emsp;d2</a></li>
+							<li><a href="#">&emsp;d3</a></li>
+							<li><a href="#">&emsp;d4</a></li>
+						</ul>
+					</li>
+					<li class="li1">eee
+						<ul>
+							<li><a href="#">&emsp;e1</a></li>
+							<li><a href="#">&emsp;e2</a></li>
+							<li><a href="#">&emsp;e3</a></li>
+							<li><a href="#">&emsp;e4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="body">body</div>
+			<div class="bottom"> bott</div>
+		</div>
+	</body>
+</html>
