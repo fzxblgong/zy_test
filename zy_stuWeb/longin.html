@@ -1,53 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>登录界面</title>
+		<meta charset="utf-8"/>
+		<title></title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/Clear.css"/> -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<style type="text/css">
 			body{
-				background-color: #a3a3a3;
-				width: 100%;
-				margin-bottom: 8px;
+				background-color: #A3A3A3;	
 			}
-			#div0{
-				position: relative;
-			}
-			#div1{
-				height: 100%;
-			}
-			input{
-				margin-bottom: 8px;
-				display: block;
+			#box1{
+				background-color: #FFFFFF;
+				padding: 20px 20px 20px 20px;
+				position: absolute;
+				left: 40%;
+				top: 40%;
 			}
 			span{
+				margin-bottom: 10px;
+			}
+			#input1,#input2{
 				display: block;
-				background-color: #fff;
-				padding: 20px;
-				position: absolute;
-				top: 200px;
-				left: 400px;
+				margin-bottom: 15px;
 			}
 			.btn{
-				margin: 0 0 0 25px;
-				display: inline-block;
+				margin-left: 25px;
 			}
 		</style>
-		<script type="text/javascript">
-			
-		</script>
 	</head>
 	<body>
-		<div id="div0">
-			<div id="div1">
-				<form action="Sever.html">
-					<span>用户名:</span>	
-					<input type="text" id="text1" name="userName" />
-					<span>密&emsp;码	:</span>
-					<input type="password" name="passWord" />
-					<input type="submit" id="btn1" class="btn" value="登录" />
-					<input type="reset" class="btn" value="清除" />
-				</form>
-			</div>
+		<div id="box1">
+			<form action="index.html" method="post">
+				<span>
+					用户名:
+				</span>
+				<input type="text" id="input1" name="userName" />
+				<span>
+					密&emsp;码:
+				</span>
+				<input type="password" name="passWord" id="input2" />
+				<input type="submit" value="登录" class="btn"/>
+				<input type="reset" value="清除" class="btn"/>
+			</form>
 		</div>
 	</body>
 </html>

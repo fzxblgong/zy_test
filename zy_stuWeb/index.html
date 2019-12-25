@@ -11,16 +11,7 @@
 				// $ali.mousemove
 			    for(var i=0;i<$ali.length;i++){
 					$ali.eq(i).click(function(){	
-						// $(".li1 ul").toggle();
 						$(this).find("ul").toggle();
-							/* if($(this).find("ul").is(':hidden')){
-								$(this).find("ul").show()
-							}else{
-								$(this).find("ul").hide()
-							} */
-						/* 	alert()
-							$ali.eq(i).show();
-						}) */
 					});
 				}
 					// var $li = $(".li1 ul li");
@@ -34,6 +25,10 @@
 				background-color: blue;
 			}
 
+			.top {
+				position: relative;
+			}
+
 			.left,
 			.body {
 				float: left;
@@ -41,6 +36,28 @@
 
 			.bottom {
 				clear: both;
+			}
+
+			#logo {
+				width: 30%;
+				height: 70px;
+				background-color: #FFFFFF;
+				display: inline-block;
+			}
+
+			#logon {
+				width: 10%;
+				height: 30px;
+				background-color: #FFFFFF;
+				display: inline-block;
+				position: absolute;
+				left: 87%;
+				top: 50%;
+				padding: 6px 0 0 20px;
+			}
+
+			#logon a {
+				
 			}
 
 			#div1x .left,
@@ -57,36 +74,38 @@
 			.body {
 				width: 85%;
 				background-color: #fff;
+				float: left;
 			}
-
-			/* #div1{
-				width: 200px;
-				height: 200px;
-				background-color: #bfa;
-			} */
-			/* .nav1>li>ul {
-				display: none;
-			} */
 
 			.nav1>li {
 				background-color: #545454;
 				margin-bottom: 5px;
-					-webkit-user-select:none;
-				
-				     -moz-user-select:none;
-				
-				     -ms-user-select:none;
-				
-				     user-select:none;
+				-webkit-user-select: none;
+
+				-moz-user-select: none;
+
+				-ms-user-select: none;
+
+				user-select: none;
 			}
-			.nav1 li ul li a{
+
+			.nav1 li ul li a {
 				color: white;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="div1x">
-			<div class="top">top</div>
+			<div class="top">
+				<div id="logo">
+
+				</div>
+				<div id="logon">
+					<a href="longin.html" target="_blank">登录&nbsp;</a>
+					<span style="color: #A3A3A3; -webkit-user-select: none;	-moz-user-select: none;	-ms-user-select: none;user-select: none;">|</span>
+					<a href="" target="_blank">&nbsp;注册</a>
+				</div>
+			</div>
 			<div class="left">
 				<ul class="nav1">
 					<li class="li1">aaaaa
@@ -105,7 +124,7 @@
 							<li><a href="#">&emsp;b4</a></li>
 						</ul>
 					</li>
-					<li class="li1">cccc
+					<li class="li1">ccccc
 						<ul>
 							<li><a href="#">&emsp;c1</a></li>
 							<li><a href="#">&emsp;c2</a></li>
@@ -113,7 +132,7 @@
 							<li><a href="#">&emsp;c4</a></li>
 						</ul>
 					</li>
-					<li class="li1">dddddd
+					<li class="li1">ddddd
 						<ul>
 							<li><a href="#">&emsp;d1</a></li>
 							<li><a href="#">&emsp;d2</a></li>
@@ -121,7 +140,7 @@
 							<li><a href="#">&emsp;d4</a></li>
 						</ul>
 					</li>
-					<li class="li1">eee
+					<li class="li1">eeeee
 						<ul>
 							<li><a href="#">&emsp;e1</a></li>
 							<li><a href="#">&emsp;e2</a></li>
