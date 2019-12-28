@@ -12,7 +12,7 @@ buildNumber.properties
 
 .gitignore
 
-.idea/
+*/*.idea/
 vcs.xml
 
 ## File-based project format:
