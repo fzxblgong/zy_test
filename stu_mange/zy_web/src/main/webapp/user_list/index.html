@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>华信智园管理系统</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<script src="js/jQuery-3.4.1.js"></script>
+		<script>
+			$(function() {
+				$('.list').find('li:first-child').children('.else').show(); // 首行默认显示
+				$(".list > li").on("click", ".li", function() {
+					$(this).next('.else').slideToggle(500);
+					$(this).parent().siblings().children('.else').slideUp(500);
+					$("html,body").animate({
+						scrollTop: 0
+					}, 500); 
+				});
+				// $('#a1').click(
+				// 	$('#iframe01')
+				// );
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/Clear.css" />
+		<style type="text/css">
+			body {
+				font-size: 25px;
+				/* overflow: hidden; */
+			}
+
+			.top {
+				background-color: #2899e7;
+				position: relative;
+				height: 150px;
+			}
+
+			.bottom {
+				clear: both;
+				background-color: #353535;
+				height: 70px;
+				font-size: 14px;
+				color: #898989;
+				text-align: center;
+				padding: 25px;
+			}
+
+			#logo {
+				position: absolute;
+				left: 20px;
+				top: 50px;
+			}
+
+			#logo img {
+				-webkit-user-select: none;
+
+				-moz-user-select: none;
+
+				-ms-user-select: none;
+
+				user-select: none;
+			}
+
+			#logon {
+				width: 100px;
+				height: 40px;
+				background-color: #ddd;
+				float: right;
+				margin: 60px 20px 0 0;
+				padding: 0 0 0 10px;
+			}
+
+			#logon a,
+			span {
+				font-size: 14px;
+
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			.left {
+				width: 200px;
+				background-color: #DDD;
+				height: 930px;
+				float: left;
+			}
+			
+			.list{
+				margin-left: 20px;
+			}
+			
+			.list>li{
+				color: #747474;
+			}
+
+			.body {
+				height: 900px;
+				background-color: #ddd;
+				margin: 20px 20px 0 220px;
+				/* padding: 1% 0 0 1%; */
+				border-bottom: 10px solid #FFFFFF;
+			}
+			
+			#iframe01{
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+
+			.else {
+				width: 100%;
+				display: none;
+			}
+
+			.else>a {
+				color: #FFFFFF;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div class="top">
+				<div id="logo">
+					<img src="img/logo.png">
+				</div>
+				<div id="logon">
+					<div id="logonbox">
+						<a href="longin.html" target="_blank">登录</a>
+						<span style="color: #6a6a6a;">|</span>
+						<a href="" target="_blank">注册</a>
+					</div>
+				</div>
+			</div>
+			<div class="left">
+				<ul class="list">
+					<li>
+						<div class="li">
+							用户管理
+						</div>
+						<div class="else">
+							<a href="javascript:" class="else-list first" id="a1">&emsp;用户管理</a>
+							<a class="else-list">&emsp;学生管理</a>
+							<a class="else-list">&emsp;教师管理</a>
+						</div>
+					</li>
+					<li>
+						<div class="li">
+							b
+						</div>
+						<div class="else">
+							<a class="else-list first">b1</a>
+							<a class="else-list">b1</a>
+							<a class="else-list">b1</a>
+							<a class="else-list">b1</a>
+						</div>
+					</li>
+					<li>
+						<div class="li">
+							c
+						</div>
+						<div class="else">
+							<a class="else-list first">c1</a>
+							<a class="else-list">c1</a>
+							<a class="else-list">c1</a>
+							<a class="else-list">c1</a>
+						</div>
+					</li>
+					<li class="last">
+						<div class="li">
+							d
+						</div>
+						<div class="else">
+							<a class="else-list first">d1</a>
+							<a class="else-list">d1</a>
+							<a class="else-list">d1</a>
+							<a class="else-list">d1</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="body">
+				<iframe id="iframe01" src="users_man/users_list.html" ;></iframe>
+			</div>
+			<div class="bottom">
+				©版权所有：XXXXXX有限公司|地址：昆明市官渡区吴井路193号|咨询热线：400-7777-699
+			</div>
+		</div>
+	</body>
+</html>
