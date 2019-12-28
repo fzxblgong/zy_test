@@ -1,8 +1,5 @@
 # zy_test
-test xx aaabb
-智原实训项目
-xxx
-fdafafdafsadfsadfasfdsaf
-ssfsda
+学生管理系统
 
-fdsaffdsafdsa
+©版权所有：华信智原
+
