@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>华信智园管理系统</title>
+		<title>华信智原系统</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
-		<script src="js/jQuery-3.4.1.js"></script>
+		<script src="/base/js/jQuery-3.4.1.js"></script>
 		<script>
 			$(function() {
 				$('.list').find('li:first-child').children('.else').show(); // 首行默认显示
@@ -19,6 +19,14 @@
 				// 	$('#iframe01')
 				// );
 			});
+			function open_page(obj){
+                var path = 'users_man/'+obj+'_list.html';
+                $("#iframe01").attr("src",path);
+			}
+
+
+
+
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/Clear.css" />
 		<style type="text/css">
@@ -139,8 +147,8 @@
 							用户管理
 						</div>
 						<div class="else">
-							<a href="javascript:" class="else-list first" id="a1">&emsp;用户管理</a>
-							<a class="else-list">&emsp;学生管理</a>
+							<a href="javascript:open_page('users')" class="else-list first">&emsp;用户管理</a>
+							<a href="javascript:open_page('stu')"  class="else-list">&emsp;学生管理</a>
 							<a class="else-list">&emsp;教师管理</a>
 						</div>
 					</li>
