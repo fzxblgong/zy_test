@@ -6,7 +6,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-    <module>stu_man_service</module>
     <module>stu_man_web</module>
+    <module>stu_man_service0</module>
   </modules>
 </project>

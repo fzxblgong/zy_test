@@ -25,7 +25,7 @@
   <dependencies>
   	<dependency>
       	<groupId>com.zy</groupId>
-  		<artifactId>stu_man_service</artifactId>
+  		<artifactId>stu_man_service0</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
