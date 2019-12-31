@@ -36,7 +36,7 @@
         <!--pojo位置-->
         <property name="typeAliasesPackage" value="domain"></property>
         <!--mapper文件位置-->
-        <property name="mapperLocations" value="classpath:dao/**/*.xml"/>
+        <property name="mapperLocations" value="classpath:dao/*.xml"/>
     </bean>
     <!-- mapper 扫描器 ：用来产生代理对象-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

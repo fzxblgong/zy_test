@@ -15,6 +15,6 @@ public interface UserDao extends BaseMapper<User> {
      * @return
      */
     public User findUserById(Integer id);
-    @Select("select * from user")
+//    @Select("select * from user")
     public List<User> findAll();
 }
